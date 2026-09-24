@@ -31,6 +31,7 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 img {
@@ -151,7 +152,8 @@ p {
   letter-spacing: 0.05em;
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 
 .button:hover {
@@ -304,6 +306,12 @@ p {
   border-radius: 16px;
   box-shadow: var(--shadow);
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .offer-card {
+    padding: 24px 16px;
+  }
 }
 
 .badge {
