@@ -312,6 +312,12 @@ p {
   .offer-card {
     padding: 24px 16px;
   }
+  .price strong {
+    font-size: 44px !important;
+  }
+  .offer-card h3 {
+    font-size: 20px !important;
+  }
 }
 
 .badge {
