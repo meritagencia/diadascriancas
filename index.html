@@ -9,6 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="landing-style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1388338923455754');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1388338923455754&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 <div style="overflow-x: hidden; width: 100%; position: relative;">
@@ -29,7 +47,7 @@
           </p>
 
           <div class="hero__actions">
-            <a class="button button--primary" href="https://pay.wiapy.com/Gh1sm9aCg0Nd" target="_blank">Garantir Acesso Imediato</a>
+            <a class="button button--primary" href="https://pay.wiapy.com/Gh1sm9aCg0Nd" target="_blank" onclick="fbq('track', 'InitiateCheckout');">Garantir Acesso Imediato</a>
             <a class="button button--ghost" href="#recursos">Ver conteúdo</a>
           </div>
         </div>
@@ -150,7 +168,7 @@
             <span>De R$ 47,90 por</span>
             <strong>R$ 14,90</strong>
           </div>
-          <a class="button button--primary button--full" href="https://pay.wiapy.com/Gh1sm9aCg0Nd" target="_blank" style="font-size: 18px; height: 60px;">QUERO GARANTIR MEU ACESSO</a>
+          <a class="button button--primary button--full" href="https://pay.wiapy.com/Gh1sm9aCg0Nd" target="_blank" style="font-size: 18px; height: 60px;" onclick="fbq('track', 'InitiateCheckout');">QUERO GARANTIR MEU ACESSO</a>
           <p style="text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 16px;"><i class="fa-solid fa-lock" style="margin-right: 8px;"></i>Pagamento 100% seguro</p>
         </div>
       </div>
