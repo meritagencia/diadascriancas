@@ -103,15 +103,14 @@ p {
 
 .hero__media {
   margin: 20px 0 30px;
-  width: 100%;
 }
 
 .hero__media picture,
 .hero__media img {
   display: block;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .eyebrow {
